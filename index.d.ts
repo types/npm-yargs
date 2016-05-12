@@ -43,7 +43,7 @@ declare module yargs {
     exitProcess (enable: boolean): Yargs;
     fail (fn: (message: string) => any): Yargs;
     group (keys: string | string[], groupName: string): Yargs;
-    help (): string;
+    help (): Yargs;
     help (option?: string, description?: string): Yargs;
     implies (x: string, y: string): Yargs;
     locale (): string;
