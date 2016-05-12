@@ -15,7 +15,7 @@ declare module yargs {
     boolean (key: string): Yargs;
     check (fn: (argv: Argv, aliases: { [key: string]: string[] }) => any): Yargs;
     choices (key: string, choices: (string | number)[]): Yargs;
-    command (command: string, description: string, fn?: (yargs: Yargs, argv: Argv) => void): Yargs;
+    command (command: string, description: string, builder?: (yargs: Yargs, argv: yargs.Argv) => void, handler?: (argv: yargs.Argv) => void): Yargs;
     completion (cmd: string, fn?: SyncCompletionFunction | AsyncCompletionFunction): Yargs;
     completion (cmd: string, description?: string, fn?: SyncCompletionFunction | AsyncCompletionFunction): Yargs;
     config (key: string, description?: string): Yargs;
