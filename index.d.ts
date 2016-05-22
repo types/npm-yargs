@@ -64,7 +64,7 @@ declare module yargs {
     updateStrings (obj: { [key: string]: string }): Yargs;
     usage (message: string, opts?: Options): Yargs;
     version (version: () => string): Yargs;
-    version (version: string, option?: string, description?: string): Yargs;
+    version (version?: string, option?: string, description?: string): Yargs;
     wrap (columns: number): Yargs;
   }
 
