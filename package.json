@@ -5,7 +5,7 @@
     "lint": "tslint -c tslint.json index.d.ts test.ts"
   },
   "devDependencies": {
-    "ts-node": "^3.0.3",
+    "ts-node": "^4.0.0",
     "tslint": "^5.2.0",
     "typings": "^2.1.1",
     "yargs": "^8.0.1"
